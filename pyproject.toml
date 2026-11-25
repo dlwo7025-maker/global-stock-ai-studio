@@ -1,0 +1,36 @@
+[project]
+name = "global-stock-predictor"
+version = "0.1.0"
+description = "국내(KRX) 및 해외(US/Global) 주식 통합 AI 예측 · 멀티 에이전트 분석 · 워크포워드 백테스팅 시스템"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.13.0",
+    "scikit-learn>=1.5.0",
+    "lightgbm>=4.5.0",
+    "xgboost>=2.1.0",
+    "yfinance>=0.2.50",
+    "finance-datareader>=0.9.90",
+    "pykrx>=1.0.45",
+    "plotly>=5.24.0",
+    "streamlit>=1.40.0",
+    "rich>=13.9.0",
+    "pydantic>=2.9.0",
+    "requests>=2.32.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.3.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dl = [
+    "torch>=2.4.0",
+]
+foundation = [
+    "chronos-forecasting>=1.4.0",
+    "transformers>=4.46.0",
+]
+llm = [
+    "openai>=1.50.0",
+]
